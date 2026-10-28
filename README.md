@@ -46,7 +46,7 @@ if ($LASTEXITCODE -eq 0) { "No fixable CRITICAL vulnerabilities" }
 
 ## Evidence and incomplete steps
 
-Screenshots are stored in `screenshots/`. Final Docker Hub, registry, Trivy, and cosign evidence must be added after credentials and tools are available in the terminal.
+Screenshots are stored in `screenshots/`. The terminal and Docker Hub evidence screenshots must be captured using the required `[257]` prompt and stored with the evidence codes from the assessment.
 
 ## Security rules
 

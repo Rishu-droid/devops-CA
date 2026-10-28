@@ -2,6 +2,7 @@ __pycache__/
 *.py[cod]
 .env
 *.key
+cosign.exe
 .env.*
 !.env.example
 reports/*.json
