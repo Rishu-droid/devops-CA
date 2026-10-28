@@ -20,7 +20,7 @@ Open `http://localhost:257`. The backend release is `rishabh010904/fest-backend:
 
 ## Image verification
 
-- **1.0.0 digest:** `PENDING_DOCKER_HUB_PUSH`
+- **1.0.0 digest:** `sha256:82e88f4ef8d0dbaa35ff0109d3389c01971bd82ce2e28c8e7ef1ffc4b4ada482`
 - **Signature public key:** `cosign.pub`
 - **Unsigned release:** `1.0.1` must be rejected by `cosign verify`.
 
@@ -32,8 +32,8 @@ cosign verify --key cosign.pub rishabh010904/fest-backend@sha256:<DIGEST>
 
 | Image | CRITICAL | HIGH | Size |
 |---|---:|---:|---:|
-| fest-backend:0.1 | 234 | 2243 | PENDING_BUILD |
-| fest-backend:0.2 | PENDING_SCAN | PENDING_SCAN | PENDING_BUILD |
+| fest-backend:0.1 | 234 | 2243 | 1,596,506,523 bytes |
+| fest-backend:0.2 | 0 | 44 | 271,098,098 bytes |
 
 The fix moves the image to a pinned Python slim base, runs the application as a non-root user, and upgrades the Python dependencies.
 
