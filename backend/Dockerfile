@@ -1,9 +1,11 @@
-FROM python:3.9
+FROM python:3.13.7-slim
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 ARG APP_VERSION=dev
 ENV APP_VERSION=${APP_VERSION}
+
+RUN apt-get update && apt-get upgrade -y && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 COPY requirements.txt .

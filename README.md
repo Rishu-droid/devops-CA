@@ -32,7 +32,7 @@ cosign verify --key cosign.pub rishabh010904/fest-backend@sha256:<DIGEST>
 
 | Image | CRITICAL | HIGH | Size |
 |---|---:|---:|---:|
-| fest-backend:0.1 | PENDING_SCAN | PENDING_SCAN | PENDING_BUILD |
+| fest-backend:0.1 | 234 | 2243 | PENDING_BUILD |
 | fest-backend:0.2 | PENDING_SCAN | PENDING_SCAN | PENDING_BUILD |
 
 The fix moves the image to a pinned Python slim base, runs the application as a non-root user, and upgrades the Python dependencies.
