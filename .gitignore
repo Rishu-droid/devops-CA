@@ -1,0 +1,5 @@
+.env
+*.key
+.env.*
+!.env.example
+reports/*.json
